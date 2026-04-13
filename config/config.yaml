@@ -1,0 +1,45 @@
+# Video Summarization System Configuration
+
+# Input/Output
+input_video: input/sample_video.mp4
+output_summary_video: output/summary_video.mp4
+output_keyframes_dir: output/keyframes
+
+# Video Processing
+video_fps: 30
+output_fps: 15
+
+# Scene Detection
+scene_detection:
+  method: ssim  # Options: ssim, histogram, pixeldiff, all
+  threshold: 0.5  # Scene change threshold (0-1, higher = more sensitive)
+  
+# Keyframe Extraction
+keyframe_extraction:
+  method: adaptive  # Options: interval, scenes, adaptive, importance
+  interval: 30  # Used when method is 'interval'
+  similarity_threshold: 0.9  # For adaptive method (0-1, higher = more similar frames kept)
+  
+# Summary Generation
+summary_generation:
+  duration_per_frame: 0.5  # Duration to display each keyframe (seconds)
+  interpolate: false  # Interpolate between keyframes
+  codec: mp4v  # Video codec (mp4v, XVID, MJPG)
+  
+# Processing
+processing:
+  frame_resize_scale: 1.0  # Resize frames for faster processing (0.25 = 25% size)
+  use_threading: true  # Use multi-threading
+  batch_size: 30  # Number of frames to process in batch
+  
+# Display
+display:
+  show_progress: true
+  show_statistics: true
+  verbose: true
+  
+# Advanced Features
+advanced:
+  save_thumbnails: true
+  thumbnail_size: [320, 180]
+  compression_ratio_target: 3.0  # Target compression (input/output)
