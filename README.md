@@ -1,4 +1,5 @@
 # Video Summarization System
+> Last automated login update: 2026-04-14 12:41:38
 
 A production-ready video summarization system built with OpenCV that automatically analyzes videos, detects scene changes, extracts keyframes, and generates summarized videos.
 
@@ -18,32 +19,32 @@ A production-ready video summarization system built with OpenCV that automatical
 
 ```
 video_summarization_system/
-├── main.py                      # Main entry point
-├── requirements.txt             # Python dependencies
-├── config/
-│   └── config.yaml             # Configuration file
-├── video_loader/
-│   ├── __init__.py
-│   └── video_reader.py         # Video file handling
-├── scene_detection/
-│   ├── __init__.py
-│   └── scene_detector.py       # Scene change detection
-├── keyframe_extraction/
-│   ├── __init__.py
-│   └── keyframe_selector.py    # Keyframe selection
-├── video_writer/
-│   ├── __init__.py
-│   └── summary_writer.py       # Video generation
-├── utils/
-│   ├── __init__.py
-│   ├── progress.py             # Progress tracking
-│   ├── logger.py               # Logging utilities
-│   └── metrics.py              # Metrics tracking
-├── input/                       # Input video files
-├── output/
-│   ├── keyframes/              # Extracted keyframes
-│   └── summary_video.mp4       # Output summary video
-└── README.md                    # This file
+Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ main.py                      # Main entry point
+Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ requirements.txt             # Python dependencies
+Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ config/
+Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ config.yaml             # Configuration file
+Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ video_loader/
+Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ __init__.py
+Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ video_reader.py         # Video file handling
+Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ scene_detection/
+Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ __init__.py
+Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ scene_detector.py       # Scene change detection
+Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ keyframe_extraction/
+Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ __init__.py
+Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ keyframe_selector.py    # Keyframe selection
+Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ video_writer/
+Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ __init__.py
+Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ summary_writer.py       # Video generation
+Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ utils/
+Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ __init__.py
+Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ progress.py             # Progress tracking
+Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ logger.py               # Logging utilities
+Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ metrics.py              # Metrics tracking
+Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ input/                       # Input video files
+Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ output/
+Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ keyframes/              # Extracted keyframes
+Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ summary_video.mp4       # Output summary video
+Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ README.md                    # This file
 ```
 
 ## Installation
